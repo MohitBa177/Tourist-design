@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/*Header Styles*/
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 30px;
+    height: 120px;
+}
+
+nav ul {
+    margin: 15px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-md-4 {
+    flex: 0 0 33.333%;
+    padding: 0 15px;
+}
+
+/*Background image styles*/
+.hero {
+    position: relative;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translate(0, -50%);
+    width: 40%;
+    height: 80%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.hero-content h1 {
+    margin-top: 18px;
+    font-size: 60px;
+}
+
+.hero-content p {
+    margin-top: 18px;
+    font-size: 30px;
+}
+
+.hero-content button {
+    margin-top: 10%;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero-content button a {
+    text-decoration: none;
+    color: #333;
+}
+
+/*Searh bar styles*/
+.search {
+    position: relative;
+    height: 100px;
+    padding: 35px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    margin: 70px auto;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.search input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+
+.search ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.search ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Tourist spot styles*/
+.tourist-spots {
+    padding: 30px 0;
+}
+
+.tourist-spots h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tourist-spot {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tourist-spot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.tourist-spot .content {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.tourist-spot .content h3 {
+    margin-bottom: 5px;
+}
+
+.tourist-spot .content p {
+    margin-bottom: 0;
+}
+
+/*Section styles*/
+.special {
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(images/background.jpg);
+    margin: 70px auto;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.special p {
+    text-align: center;
+    padding: 80px;
+    font-size: 40px;
+    color: #fff;
+}
+
+/*Featured spots style*/
+.featured-spots {
+    margin-bottom: 20px;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.featured-spots h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.featured-spot {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-spot img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+
+.featured-spot .content {
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.featured-spot .content h3 {
+    margin-bottom: 5px;
+}
+
+.featured-spot .content p {
+    margin-top: 10px;
+}
+
+/* Footer style */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.footer-links p {
+    margin-top: 8px;
+}
+
+/*For screen smaller than 768px*/
+@media only screen and (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+    }
+
+    .hero {
+        height: 800px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content {
+        font-size: 20px;
+    }
+
+    .search {
+        font-size: 18px;
+    }
+
+    .tourist-spots h1,
+    .featured-spots h2 {
+        font-size: 24px;
+    }
+}
+
+/*For screen smaller then 480px*/
+@media only screen and (max-width: 480px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content {
+        font-size: 16px;
+    }
+
+    .search {
+        font-size: 16px;
+    }
+
+    .tourist-spots h1,
+    .featured-spots h2 {
+        font-size: 12px;
+
+    }
+}

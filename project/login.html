@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Wanderlust Travels</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Welcome to Wanderlust!</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="form-container">
+        <h2>Login</h2>
+        <form>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email"required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password"required>
+          </div>
+          <button type="button" onclick="submitForm()">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+        <div id="message"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+        <div class="footer-p">
+            <p>Wanderlust</p>
+        <p>Your ultimate travel companion</p>
+        </div>
+      </footer>
+
+      
+  <script>
+    function submitForm() {
+      var messageBox = document.getElementById('message');
+      messageBox.innerHTML = 'Thank you for Login!';
+      messageBox.style.display = 'block';
+      setTimeout(function() {
+        window.location.href = 'index.html';
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>

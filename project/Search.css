@@ -1,0 +1,272 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background-color: #333;
+    border-bottom: 1px solid #ccc;
+    height: 120px;
+    color: #fff;
+}
+
+.logo {
+    position: relative;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+header nav ul{
+    list-style: none;
+    display: inline-flex;
+    padding: 10px;
+    color: #fff;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    margin-top: 2rem;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"],
+.search-bar input[type="number"] {
+    flex: 1;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.search-bar button:hover {
+    background-color: #666;
+}
+
+/* Hotels Styles */
+h2{
+    margin-top: 120px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.results {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.result {
+    width: calc(50% - 1rem);
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.result .image {
+    width: 100%;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+}
+
+.result .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.result .rating {
+    margin-top: 1rem;
+}
+
+.result .rating .stars {
+    color: coral;
+    font-size: 1.2rem;
+}
+
+.result .rating .reviews {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.result button{
+margin-top: 30px;
+background-color: #333;
+color: #333;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+margin-bottom: 30px;
+}
+
+.result button a{
+text-decoration: none;
+color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    height: 67px;
+}
+
+.footer-links {
+    margin-top: 0px;
+}
+
+.footer-links a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* For screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    header {
+        height: 90px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        top: 10px;
+    }
+
+    .filter-group input[type="checkbox"] {
+        margin-right: 20px;
+    }
+
+    .result {
+        width: calc(50% - 1rem);
+    }
+}
+
+/* For screens smaller than 480px */
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0.2rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .result {
+        width: calc(100% - 1rem);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.filters {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+    display: flexbox;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-group label {
+    font-weight: bold;
+}
+
+.filter-group input[type="checkbox"] {
+    margin-right: 40px;
+}
+*/
